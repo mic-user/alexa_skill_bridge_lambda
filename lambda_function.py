@@ -39,6 +39,9 @@ def lambda_handler(event, context):
     
     scope = directive.get('endpoint', {}).get('scope')
     if scope is None:
+        # token is in grantee for Linking directive 
+        scope = directive.get('payload', {}).get('grantee')
+    if scope is None:
         # token is in payload for Discovery directive 
         scope = directive.get('payload', {}).get('scope')
     assert scope is not None, 'Malformatted request - missing endpoint.scope'
