@@ -31,6 +31,7 @@ def lambda_handler(event, context):
 
     base_url = os.environ.get('BASE_URL')
     assert base_url is not None, 'Please set BASE_URL environment variable'
+    base_url = base_url.strip("/")
 
     directive = event.get('directive')
     assert directive is not None, 'Malformatted request - missing directive'
