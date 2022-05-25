@@ -78,4 +78,5 @@ def lambda_handler(event, context):
                 }
             }
         }
+    _logger.debug('Response: %s', response.data.decode("utf-8"))
     return json.loads(response.data.decode('utf-8'))
