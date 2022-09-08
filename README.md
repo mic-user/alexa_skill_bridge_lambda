@@ -6,7 +6,7 @@ The **Checklist** for your guys in the past and the future for the record.
 
 
 # **[Summary]**
-- Exposed 443 HA port.
+- Exposed 443 HA port(MUST).
 - Any SSL cert.
 - Get the external HA Address.
 - Alexa config in HA confiuration.xml
