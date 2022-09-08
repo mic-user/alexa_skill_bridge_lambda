@@ -4,6 +4,19 @@ The **Checklist** for your guys in the past and the future for the record.
 (If you don't pass thru below checklist any of bit, you cannot get the own Alexa skill link.)
 
 
+
+# **[Summary]**
+- Exposed 443 HA port.
+- Any SSL cert.
+- Get the external HA Address.
+- Alexa config in HA confiuration.xml
+- Lambda at right region for locale
+- Set the address into everywhere correctly like BASE_URL, Alexa console, etc.
+- Non-blocked network path to HA reside in your room.
+- Wait discovery and use.
+
+
+
 # **[pre-requisition]**
 1. Check HA address that your own domain or dynamic DNS(DDNS) or even IP
 2. Prepare sure SSL certification that the free Let'sencrypt or free self-signed or commercial SSL cert if you would like.
@@ -68,17 +81,6 @@ Walla!. All your from now.
 # **[Addition]**
 1. Do not spend your money for same services. Since this is exactly same service you have now.
 
-
-
-# **[Summary]**
-- Exposed 443 HA port.
-- Any SSL cert.
-- Get the external HA Address.
-- Alexa config in HA confiuration.xml
-- Lambda at right region for locale
-- Set the address into everywhere correctly like BASE_URL, Alexa console, etc.
-- Non-blocked network path to HA reside in your room.
-- Wait discovery and use.
 
 
 
