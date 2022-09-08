@@ -1,4 +1,5 @@
 **alexa_skill_bridge_lambda**
+
 The **Checklist** for your guys in the past and the future for the record.
 (If you don't pass thru below checklist any of bit, you cannot get the own Alexa skill link.)
 
