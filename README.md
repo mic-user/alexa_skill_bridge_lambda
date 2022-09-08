@@ -2,7 +2,7 @@
 The Checklist for your guys in the past and the future for the record.
 (If you don't pass thru below checklist any of bit, you cannot get the own Alexa skill link.)
 
-[pre-requisition]
+#[pre-requisition]
 
 Check HA address that your own domain or dynamic DNS(DDNS) or even IP
 
@@ -32,7 +32,7 @@ READ carefully ALL the MATERIALS regards above to complete the section for 'Lamb
 
 Stop/cut and logout the home asisstant's(by nabucase.net) cloud annual payment service from the HA settings if you have.
 
-[To get account link(important part)]
+#[To get account link(important part)]
 
 Check the AWS Lambda region that N.Virginia or Oregon or EU that related to your Alexa locale
 Make sure your home assistant's exposed port is 443 not 8123 which Alexa OAuth standard requirement.
@@ -58,7 +58,7 @@ If your SSL cert is free one, make sure your skill as in 'DEV' mode on the Alexa
 Go to Alexa app or web > go to skill list > find your skill in DEV or peroper tab > click the skill you made > 'Enable' > Now login into HA(doesn't matter MFA or not) > TADA! you can see beautiful green 'successfully linked' message.
 (if you cannot, it might firewall or any network path issue that blocked to reach to HA. So go back and recheck again.)
 
-[Wait discovery(which Automatic drive)]
+#[Wait discovery(which Automatic drive)]
 
 AFTER, account link as above, the Alexa app gose to discovery mode.
 IF you already have discovered devices list in the Alexa app by another Alexa link service,
@@ -67,10 +67,11 @@ or
 if you are very new to link-up with Alexa, after discovery while, you can see all the devices on your Alexa app.
 Walla!. All your from now.
 
-[Addition]
+#[Addition]
 
 Do not spend your money for same services. Since this is exactly same service you have now.
-[Summary]
+
+#[Summary]
 
 Exposed 443 HA port.
 Any SSL cert.
@@ -80,7 +81,8 @@ Lambda at right region for locale
 Set the address into everywhere correctly like BASE_URL, Alexa console, etc.
 Non-blocked network path to HA reside in your room.
 Wait discovery and use.
-[Q & A]
+
+#[Q & A]
 
 Is there will be extra charges/bill from AWS Lambda or Alexa Console?
 Mostly zero. Since the Lambda(a bridge between Alexa system and HA) only used when you are in log-in via Alexa skill
