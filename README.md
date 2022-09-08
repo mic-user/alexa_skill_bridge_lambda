@@ -2,7 +2,7 @@
 The Checklist for your guys in the past and the future for the record.
 (If you don't pass thru below checklist any of bit, you cannot get the own Alexa skill link.)
 
-# [pre-requisition]
+# [Pre-requisition]
 Check HA address that your own domain or dynamic DNS(DDNS) or even IP
 Prepare sure SSL certification that the free Let'sencrypt or free self-signed or commercial SSL cert if you would like.
 Set the SSL cert on your server for HTTPS. And make sure SSL properly applied.
