@@ -3,52 +3,35 @@ The Checklist for your guys in the past and the future for the record.
 (If you don't pass thru below checklist any of bit, you cannot get the own Alexa skill link.)
 
 # [pre-requisition]
-
 Check HA address that your own domain or dynamic DNS(DDNS) or even IP
-
 Prepare sure SSL certification that the free Let'sencrypt or free self-signed or commercial SSL cert if you would like.
-
 Set the SSL cert on your server for HTTPS. And make sure SSL properly applied.
-
 Set Alexa configuration in configuration.xml. Start simple and fill up later after link. Make problem simple for linkage.
-
 Create AWS account
-
 Choose the AWS Lambda region that N.Virginia or Oregon or EU that related to your Alexa language locale. AWS Alexa service will automatically find your Lambda region geologically by judging your Alexa locale.
-
 I prefer make three identically same lambda in each Regions that Virginia, Oregon, EU if you need it.
-
 Just copy & paste the source code into the Lambda(s) from Matt2005 at https://gist.github.com/matt2005/744b5ef548cc13d88d0569eea65f5e5b (thanks)
-
 Create AWS Alexa Developer Account
-
 Create AWS Alexa Skill for your own HA linkage as the materials
-
 Put the endpoint address into the Alexa skill setting(as only default if you only have one, or set multiply each by check the checkbox.)
-
 Setup the Lambdas's trigger as Alexa
-
 READ carefully ALL the MATERIALS regards above to complete the section for 'Lambda' and 'Skill' both.(above are only simple summary)
-
 Stop/cut and logout the home asisstant's(by nabucase.net) cloud annual payment service from the HA settings if you have.
 
 # [To get account link(important part)]
-
 Check the AWS Lambda region that N.Virginia or Oregon or EU that related to your Alexa locale
 Make sure your home assistant's exposed port is 443 not 8123 which Alexa OAuth standard requirement.
 so need to change your nginx's exernal open port into 443. Giveaway the 443 to HA if another your own service holding it.
-
 Make sure your network firewall that possible to reach to Home assistant by LTE or from any outside not your home Wi-Fi self.
 by test POST https://your_ha-domain_name/api/alexa/smart_home from lambda source code that any of response working. If you can see 40x on web browser, you will be fine.
 Make sure below paths are accessible without any blocker(do not care about server errors if you can reach it.)
-
-GET https://your_ha-domain_name/auth/authorize (OAuth standard api interface)
-GET https://your_ha-domain_name/auth/providers (OAuth standard api interface)
-GET https://your_ha-domain_name/manifest.json (OAuth standard api interface)
-POST https://your_ha-domain_name/auth/login_flow (OAuth standard api interface)
-POST https://your_ha-domain_name/api/alexa/smart_home (Alexa standard interface)
-which means that allow every URL paths in your firewall and NginX for HA.
-Make sure your NginX really bypassing to your HA the outside traffic.
+ GET https://your_ha-domain_name/auth/authorize (OAuth standard api interface)
+ GET https://your_ha-domain_name/auth/providers (OAuth standard api interface)
+ GET https://your_ha-domain_name/manifest.json (OAuth standard api interface)
+ POST https://your_ha-domain_name/auth/login_flow (OAuth standard api interface)
+ POST https://your_ha-domain_name/api/alexa/smart_home (Alexa standard interface)
+ which means that allow every URL paths in your firewall and NginX for HA.
+ Make sure your NginX really bypassing to your HA the outside traffic.
 Especially, https://your_ha-domain_name/api/alexa/smart_home paht possible to bypass all traffic.
 
 Get your final external address, and set into all BASE_URL of environment variables & every in AWS Alexa console, AWS Lambeda, NginX, etc that port 443 without ':xxxx' part for your HA address.
@@ -59,7 +42,6 @@ Go to Alexa app or web > go to skill list > find your skill in DEV or peroper ta
 (if you cannot, it might firewall or any network path issue that blocked to reach to HA. So go back and recheck again.)
 
 # [Wait discovery(which Automatic drive)]
-
 AFTER, account link as above, the Alexa app gose to discovery mode.
 IF you already have discovered devices list in the Alexa app by another Alexa link service,
 the app will tell you 'NO NEW device discovered' that nothing wrong since there are NO MORE NEW devices to discover.
@@ -68,11 +50,9 @@ if you are very new to link-up with Alexa, after discovery while, you can see al
 Walla!. All your from now.
 
 # [Addition]
-
 Do not spend your money for same services. Since this is exactly same service you have now.
 
 # [Summary]
-
 Exposed 443 HA port.
 Any SSL cert.
 Get the external HA Address.
@@ -83,7 +63,6 @@ Non-blocked network path to HA reside in your room.
 Wait discovery and use.
 
 # [Q & A]
-
 Is there will be extra charges/bill from AWS Lambda or Alexa Console?
 Mostly zero. Since the Lambda(a bridge between Alexa system and HA) only used when you are in log-in via Alexa skill
 and discovery and some only few.
