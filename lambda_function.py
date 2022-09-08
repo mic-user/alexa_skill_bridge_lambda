@@ -26,6 +26,7 @@ _logger.setLevel(logging.DEBUG if _debug else logging.INFO)
 
 def lambda_handler(event, context):
     """Handle incoming Alexa directive."""
+    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     
     _logger.debug('Event: %s', event)
 
