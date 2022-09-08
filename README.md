@@ -1,9 +1,9 @@
-# alexa_skill_bridge_lambda
+**alexa_skill_bridge_lambda**
 The **Checklist** for your guys in the past and the future for the record.
 (If you don't pass thru below checklist any of bit, you cannot get the own Alexa skill link.)
 
 
-**[pre-requisition]**
+# **[pre-requisition]**
 1. Check HA address that your own domain or dynamic DNS(DDNS) or even IP
 2. Prepare sure SSL certification that the free Let'sencrypt or free self-signed or commercial SSL cert if you would like.
 3. Set the SSL cert on your server for HTTPS. And make sure SSL properly applied.
@@ -27,7 +27,7 @@ The **Checklist** for your guys in the past and the future for the record.
 
 
 
-**[To get account link(important part)]**
+# **[To get account link(important part)]**
 1. Check the AWS Lambda region that N.Virginia or Oregon or EU that related to your Alexa locale
 2. Make sure your home assistant's exposed port is 443 not 8123 which Alexa OAuth standard requirement.
  > so need to change your nginx's exernal open port into 443. Giveaway the 443 to HA if another your own service holding it.
@@ -53,7 +53,7 @@ The **Checklist** for your guys in the past and the future for the record.
 
 
 
-**[Wait discovery(which Automatic drive)]**
+# **[Wait discovery(which Automatic drive)]**
 1. AFTER, account link as above, the Alexa app gose to discovery mode.
 IF you already have discovered devices list in the Alexa app by another Alexa link service,
 the app will tell you 'NO NEW device discovered' that nothing wrong since there are NO MORE NEW devices to discover.
@@ -64,12 +64,12 @@ Walla!. All your from now.
 
 
 
-**[Addition]**
+# **[Addition]**
 1. Do not spend your money for same services. Since this is exactly same service you have now.
 
 
 
-**[Summary]**
+# **[Summary]**
 - Exposed 443 HA port.
 - Any SSL cert.
 - Get the external HA Address.
@@ -81,7 +81,7 @@ Walla!. All your from now.
 
 
 
-**[Q & A]**
+# **[Q & A]**
 - Is there will be extra charges/bill from AWS Lambda or Alexa Console?
  > Mostly zero. Since the Lambda(a bridge between Alexa system and HA) only used when you are in log-in via Alexa skill
  > and discovery and some only few.
